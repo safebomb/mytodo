@@ -2,8 +2,9 @@ Sample::Application.routes.draw do
   resources :deals
 
   resources :todos
-  root :to => "todos#index"
+  root :to => "home#index"
 
+  match "home" => "home#index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
