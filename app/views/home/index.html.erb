@@ -200,6 +200,24 @@
 	<div id="items" style="position: relative; width: 900px; height: 205px; overflow-x: hidden; overflow-y: hidden; ">
 		
 					<div class="block" style="position: absolute; top: 0px; opacity: 1; display: block; left: 0px; z-index: 3; ">			
+
+				<% @deals.each do |deal| %>
+
+
+
+				<div class="item">
+				<div class="item-top"></div>
+				<div class="item-content">
+				<span class="tag"><span><%= deal.price %></span></span>
+				<img src="./images/hat-2-162x112.jpg" alt="Smooth Crocodile Skin" width="162" height="112">		
+				<h4><a href="http://elegantthemes.com/preview/eStore/?p=219"><%= deal.name %></a></h4>
+				</div> 
+				<a href="http://elegantthemes.com/preview/eStore/?p=219" class="more"><span>more info</span></a>
+				</div> <!-- .item -->																					
+				<% end %>
+
+
+
 				<div class="item">
 					<div class="item-top"></div>
 					
