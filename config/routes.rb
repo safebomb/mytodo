@@ -1,4 +1,6 @@
 Sample::Application.routes.draw do
+  resources :deals
+
   resources :todos
   root :to => "todos#index"
 
