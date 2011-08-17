@@ -1,239 +1,785 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Ruby on Rails: Welcome aboard</title>
-    <style type="text/css" media="screen">
-      body {
-        margin: 0;
-        margin-bottom: 25px;
-        padding: 0;
-        background-color: #f0f0f0;
-        font-family: "Lucida Grande", "Bitstream Vera Sans", "Verdana";
-        font-size: 13px;
-        color: #333;
-      }
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0040)http://elegantthemes.com/preview/eStore/ -->
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US" class="js cufon-active cufon-ready"><head profile="http://gmpg.org/xfn/11"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-      h1 {
-        font-size: 28px;
-        color: #000;
-      }
+<title>eStore Theme | Just another WordPress site</title>
 
-      a  {color: #03c}
-      a:hover {
-        background-color: #03c;
-        color: white;
-        text-decoration: none;
-      }
+<link rel="stylesheet" href="./stylesheets/style.css" type="text/css" media="screen">
+<link rel="alternate" type="application/rss+xml" title="eStore Theme RSS Feed" href="http://elegantthemes.com/preview/eStore/?feed=rss2">
+<link rel="alternate" type="application/atom+xml" title="eStore Theme Atom Feed" href="http://elegantthemes.com/preview/eStore/?feed=atom">
+<link rel="pingback" href="http://elegantthemes.com/preview/eStore/xmlrpc.php">
 
+<!--[if lt IE 7]>
+	<link rel="stylesheet" type="text/css" href="http://elegantthemes.com/preview/eStore/wp-content/themes/eStore/stylesheets/ie6style.css" />
+	<script type="text/javascript" src="http://elegantthemes.com/preview/eStore/wp-content/themes/eStore/javascripts/DD_belatedPNG_0.0.8a-min.js"></script>
+	<script type="text/javascript">DD_belatedPNG.fix('img#logo');</script>
+<![endif]-->
+<!--[if IE 7]>
+	<link rel="stylesheet" type="text/css" href="http://elegantthemes.com/preview/eStore/wp-content/themes/eStore/stylesheets/ie7style.css" />
+<![endif]-->
+<!--[if IE 8]>
+	<link rel="stylesheet" type="text/css" href="http://elegantthemes.com/preview/eStore/wp-content/themes/eStore/stylesheets/ie8style.css" />
+<![endif]-->
 
-      #page {
-        background-color: #f0f0f0;
-        width: 750px;
-        margin: 0;
-        margin-left: auto;
-        margin-right: auto;
-      }
+<script type="text/javascript">
+	document.documentElement.className = 'js';
+</script>
 
-      #content {
-        float: left;
-        background-color: white;
-        border: 3px solid #aaa;
-        border-top: none;
-        padding: 25px;
-        width: 500px;
-      }
+<meta name="robots" content="noindex,nofollow">
+<link rel="alternate" type="application/rss+xml" title="eStore Theme » Feed" href="http://elegantthemes.com/preview/eStore/?feed=rss2">
+<link rel="alternate" type="application/rss+xml" title="eStore Theme » Comments Feed" href="http://elegantthemes.com/preview/eStore/?feed=comments-rss2">
+<meta content="eStore v.2.6" name="generator"><link media="screen" type="text/css" href="./stylesheets/jquery.fancybox-1.3.4.css" rel="stylesheet">
+<link media="screen" type="text/css" href="./stylesheets/page_templates.css" rel="stylesheet"><link rel="stylesheet" id="et-shortcodes-css-css" href="./stylesheets/shortcodes.css" type="text/css" media="all">
+<link rel="stylesheet" id="myStyleSheets-css" href="./stylesheets/eshop.css" type="text/css" media="all">
+<link rel="stylesheet" id="wp-pagenavi-css" href="./stylesheets/pagenavi-css.css" type="text/css" media="all">
+<script type="text/javascript" src="javascripts/l10n.js"></script>
+<script type="text/javascript" src="./javascripts/jquery.js"></script>
+<script type="text/javascript" src="./javascripts/et_shortcodes_frontend.js"></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://elegantthemes.com/preview/eStore/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://elegantthemes.com/preview/eStore/wp-includes/wlwmanifest.xml"> 
+<link rel="index" title="eStore Theme" href="http://elegantthemes.com/preview/eStore">
+<meta name="generator" content="WordPress 3.2.1">
+<!--[if lt IE 8]>
+<style type="text/css">
+.eshoppanels li{
+    display:inline;
+    margin:10px 5px 0 5px;
+}
+</style>
+<![endif]-->
+	<style type="text/css">
+		#et_pt_portfolio_gallery { margin-left: -41px; }
+		.et_pt_portfolio_item { margin-left: 31px; }
+		.et_portfolio_small { margin-left: -40px !important; }
+		.et_portfolio_small .et_pt_portfolio_item { margin-left: 29px !important; }
+		.et_portfolio_large { margin-left: -24px !important; }
+		.et_portfolio_large .et_pt_portfolio_item { margin-left: 4px !important; }
+	</style>
 
-      #sidebar {
-        float: right;
-        width: 175px;
-      }
+<style type="text/css">cufon{text-indent:0!important;}@media screen,projection{cufon{display:inline!important;display:inline-block!important;position:relative!important;vertical-align:middle!important;font-size:1px!important;line-height:1px!important;}cufon cufontext{display:-moz-inline-box!important;display:inline-block!important;width:0!important;height:0!important;overflow:hidden!important;text-indent:-10000in!important;}cufon canvas{position:relative!important;}}@media print{cufon{padding:0!important;}cufon canvas{display:none!important;}}</style></head>
+<body id="home" class="home blog cufon-enabled chrome">
+	<div id="header">
+		<div class="container clearfix">
+			<a href="http://elegantthemes.com/preview/eStore">				<img src="./images/logo.png" alt="Logo" id="logo"></a>
+			
+							<ul id="top-menu" class="nav superfish clearfix sf-js-enabled">
+																		<li class="current_page_item"><a href="http://elegantthemes.com/preview/eStore">Home</a></li>
+												
+						<li class="page_item page-item-2"><a href="http://elegantthemes.com/preview/eStore/?page_id=2" title="About Us" class="sf-with-ul">About Us<span class="sf-sub-indicator"> »</span></a>
+<ul class="children" style="display: none; visibility: hidden; "><li class="top"><span class="menu-top"></span></li>
+	<li class="page_item page-item-264 second"><a href="http://elegantthemes.com/preview/eStore/?page_id=264" title="Contact Info">Contact Info</a></li>
+	<li class="page_item page-item-266"><a href="http://elegantthemes.com/preview/eStore/?page_id=266" title="Meet The Team">Meet The Team</a></li>
+	<li class="page_item page-item-277"><a href="http://elegantthemes.com/preview/eStore/?page_id=277" title="Who We Are">Who We Are</a></li>
+</ul>
+</li>
+<li class="page_item page-item-275"><a href="http://elegantthemes.com/preview/eStore/?page_id=275" title="Location">Location</a></li>
+<li class="page_item page-item-270"><a href="http://elegantthemes.com/preview/eStore/?page_id=270" title="Missions Statement">Missions Statement</a></li>
+<li class="page_item page-item-415"><a href="http://elegantthemes.com/preview/eStore/?page_id=415" title="Shopping Cart" class="sf-with-ul">Shopping Cart<span class="sf-sub-indicator"> »</span></a>
+<ul class="children" style="display: none; visibility: hidden; "><li class="top"><span class="menu-top"></span></li>
+	<li class="page_item page-item-416 second"><a href="http://elegantthemes.com/preview/eStore/?page_id=416" title="Checkout">Checkout</a></li>
+</ul>
+</li>
+<li class="page_item page-item-279"><a href="http://elegantthemes.com/preview/eStore/?page_id=279" title="Sitemap">Sitemap</a></li>
+									</ul> <!-- ul#nav -->
+						
+			<div id="search-bar">
+				<form method="get" id="searchform1" action="http://elegantthemes.com/preview/eStore">
+					<input type="text" value="search this site..." name="s" id="searchinput">
 
-      #footer {
-        clear: both;
-      }
+					<input type="image" src="./images/search-icon.png" id="searchsubmit">
+				</form>
+			</div> <!-- #search-bar -->
+						
+			<div id="menu">
+				<ul id="secondary-menu" class="nav superfish clearfix sf-js-enabled"><li id="menu-item-42" class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="http://elegantthemes.com/preview/eStore/?cat=4"><strong style="text-indent: 0px; "><cufon class="cufon cufon-canvas" alt="mens " style="width: 35px; height: 20px; "><canvas width="49" height="25" style="width: 49px; height: 25px; top: -4px; left: -1px; "></canvas><cufontext>mens </cufontext></cufon><cufon class="cufon cufon-canvas" alt="Clothing" style="width: 54px; height: 20px; "><canvas width="64" height="25" style="width: 64px; height: 25px; top: -4px; left: -1px; "></canvas><cufontext>Clothing</cufontext></cufon></strong><span> improve your look</span></a></li>
+<li id="menu-item-43" class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="http://elegantthemes.com/preview/eStore/?cat=5" class="sf-with-ul"><strong style="text-indent: 0px; "><cufon class="cufon cufon-canvas" alt="Interior " style="width: 54px; height: 20px; "><canvas width="68" height="25" style="width: 68px; height: 25px; top: -4px; left: -1px; "></canvas><cufontext>Interior </cufontext></cufon><cufon class="cufon cufon-canvas" alt="Design" style="width: 40px; height: 20px; "><canvas width="50" height="25" style="width: 50px; height: 25px; top: -4px; left: -1px; "></canvas><cufontext>Design</cufontext></cufon></strong><span> beautify your home</span><span class="sf-sub-indicator"> »</span></a>
+<ul class="sub-menu" style="display: none; visibility: hidden; ">
+	<li id="menu-item-86" class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="http://elegantthemes.com/preview/eStore/?cat=12">Awesome Pillows<span></span></a></li>
+	<li id="menu-item-108" class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="http://elegantthemes.com/preview/eStore/?cat=13">Modern Furniture<span></span></a></li>
+	<li id="menu-item-334" class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="http://elegantthemes.com/preview/eStore/?cat=6">Kitchen Design<span></span></a></li>
+	<li id="menu-item-335" class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="http://elegantthemes.com/preview/eStore/?cat=9">Bathroom Supplies<span></span></a></li>
+	<li id="menu-item-341" class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="http://elegantthemes.com/preview/eStore/?cat=13">Chairs<span></span></a></li>
+</ul>
+</li>
+<li id="menu-item-44" class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="http://elegantthemes.com/preview/eStore/?cat=6"><strong style="text-indent: 0px; "><cufon class="cufon cufon-canvas" alt="Kitchen " style="width: 50px; height: 20px; "><canvas width="65" height="25" style="width: 65px; height: 25px; top: -4px; left: -1px; "></canvas><cufontext>Kitchen </cufontext></cufon><cufon class="cufon cufon-canvas" alt="Supplies" style="width: 52px; height: 20px; "><canvas width="63" height="25" style="width: 63px; height: 25px; top: -4px; left: -1px; "></canvas><cufontext>Supplies</cufontext></cufon></strong><span>modern hardware</span></a></li>
+<li id="menu-item-45" class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="http://elegantthemes.com/preview/eStore/?cat=8"><strong style="text-indent: 0px; "><cufon class="cufon cufon-canvas" alt="Affordable " style="width: 73px; height: 20px; "><canvas width="87" height="25" style="width: 87px; height: 25px; top: -4px; left: -1px; "></canvas><cufontext>Affordable </cufontext></cufon><cufon class="cufon cufon-canvas" alt="Jewelry" style="width: 48px; height: 20px; "><canvas width="59" height="25" style="width: 59px; height: 25px; top: -4px; left: -1px; "></canvas><cufontext>Jewelry</cufontext></cufon></strong><span> accessories and more</span></a></li>
+<li id="menu-item-85" class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="http://elegantthemes.com/preview/eStore/?cat=10" class="sf-with-ul"><strong style="text-indent: 0px; "><cufon class="cufon cufon-canvas" alt="Accessories" style="width: 74px; height: 20px; "><canvas width="85" height="25" style="width: 85px; height: 25px; top: -4px; left: -1px; "></canvas><cufontext>Accessories</cufontext></cufon></strong><span> description here</span><span class="sf-sub-indicator"> »</span></a>
+<ul class="sub-menu" style="display: none; visibility: hidden; ">
+	<li id="menu-item-146" class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="http://elegantthemes.com/preview/eStore/?cat=15">Hand Bags<span></span></a></li>
+	<li id="menu-item-147" class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="http://elegantthemes.com/preview/eStore/?cat=16">Wallets<span></span></a></li>
+	<li id="menu-item-184" class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="http://elegantthemes.com/preview/eStore/?cat=17">Purses<span></span></a></li>
+	<li id="menu-item-204" class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="http://elegantthemes.com/preview/eStore/?cat=18">Traveling<span></span></a></li>
+	<li id="menu-item-221" class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="http://elegantthemes.com/preview/eStore/?cat=19">Hats<span></span></a></li>
+	<li id="menu-item-228" class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="http://elegantthemes.com/preview/eStore/?cat=8">Rings and Bracelets<span></span></a></li>
+</ul>
+</li>
+<li id="menu-item-87" class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="http://elegantthemes.com/preview/eStore/?cat=11"><strong style="text-indent: 0px; "><cufon class="cufon cufon-canvas" alt="Designer " style="width: 57px; height: 20px; "><canvas width="72" height="25" style="width: 72px; height: 25px; top: -4px; left: -1px; "></canvas><cufontext>Designer </cufontext></cufon><cufon class="cufon cufon-canvas" alt="Shoes" style="width: 35px; height: 20px; "><canvas width="47" height="25" style="width: 47px; height: 25px; top: -4px; left: -1px; "></canvas><cufontext>Shoes</cufontext></cufon></strong><span> happy feet</span></a></li>
+<li id="menu-item-315" class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="http://elegantthemes.com/preview/eStore/?cat=18"><strong style="text-indent: 0px; "><cufon class="cufon cufon-canvas" alt="Traveling" style="width: 60px; height: 20px; "><canvas width="71" height="25" style="width: 71px; height: 25px; top: -4px; left: -1px; "></canvas><cufontext>Traveling</cufontext></cufon></strong><span> the world</span></a></li>
+</ul>			</div> <!-- #menu -->
+			
+		</div> <!-- .container -->
+	</div> <!-- #header -->
+		
+	
+<div id="featured">
+	<div id="slides">
+					<div class="slide active" style="background-image: url(http://elegantthemes.com/preview/eStore/wp-content/uploads/2010/08/featured-31.jpg); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(102, 111, 92); display: block; background-position: 50% 0%; background-repeat: no-repeat no-repeat; ">
+				<div class="container">
+					<div class="description">
+						<div class="product">
+															<span class="tag" style="text-indent: 0px; "><span><cufon class="cufon cufon-canvas" alt="$195.99" style="width: 64px; height: 30px; "><canvas width="80" height="37" style="width: 80px; height: 37px; top: -6px; left: -1px; "></canvas><cufontext>$195.99</cufontext></cufon></span></span>
+														<h2 class="title" style="text-indent: 0px; "><a href="http://elegantthemes.com/preview/eStore/?p=20"><cufon class="cufon cufon-canvas" alt="Richie " style="width: 89px; height: 36px; "><canvas width="119" height="38" style="width: 119px; height: 38px; top: -2px; left: -1px; "></canvas><cufontext>Richie </cufontext></cufon><cufon class="cufon cufon-canvas" alt="Sambora " style="width: 149px; height: 36px; "><canvas width="179" height="38" style="width: 179px; height: 38px; top: -2px; left: -1px; "></canvas><cufontext>Sambora </cufontext></cufon><cufon class="cufon cufon-canvas" alt="Line" style="width: 53px; height: 36px; "><canvas width="74" height="38" style="width: 74px; height: 38px; top: -2px; left: -1px; "></canvas><cufontext>Line</cufontext></cufon></a></h2>
+							<p>Duis molestie lacinia adipiscing. Proin ut imperdiet ligula. Pellentesque pharetra sapien pulvinar nisi molestie quis pharetra sapien egestas. Nunc ut arcu porttitor mauris placerat elementum. Phasellus nunc libero, porttitor non suscipit fermentum,...</p>
+							<a class="more" href="http://elegantthemes.com/preview/eStore/?p=20"><span>more info</span></a>
+						</div> <!-- .product -->
+					</div> <!-- .description -->
+				</div> <!-- .container -->			
+			</div> <!-- .slide -->
+					<div class="slide" style="background-image: url(http://elegantthemes.com/preview/eStore/wp-content/uploads/2010/08/featured-2.jpg); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(235, 127, 67); display: none; background-position: 50% 0%; background-repeat: no-repeat no-repeat; ">
+				<div class="container">
+					<div class="description">
+						<div class="product">
+															<span class="tag" style="text-indent: 0px; "><span><cufon class="cufon cufon-canvas" alt="$45.95" style="width: 57px; height: 30px; "><canvas width="73" height="37" style="width: 73px; height: 37px; top: -6px; left: -1px; "></canvas><cufontext>$45.95</cufontext></cufon></span></span>
+														<h2 class="title" style="text-indent: 0px; "><a href="http://elegantthemes.com/preview/eStore/?p=16"><cufon class="cufon cufon-canvas" alt="Designer " style="width: 144px; height: 36px; "><canvas width="173" height="38" style="width: 173px; height: 38px; top: -2px; left: -1px; "></canvas><cufontext>Designer </cufontext></cufon><cufon class="cufon cufon-canvas" alt="Chairs" style="width: 89px; height: 36px; "><canvas width="112" height="38" style="width: 112px; height: 38px; top: -2px; left: -1px; "></canvas><cufontext>Chairs</cufontext></cufon></a></h2>
+							<p>Aliquam gravida posuere magna a venenatis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in diam mauris. Phasellus nunc dui, lacinia non sollicitudin dapibus, aliquam at lorem. Donec auctor, augue vitae scelerisque imperdiet,...</p>
+							<a class="more" href="http://elegantthemes.com/preview/eStore/?p=16"><span>more info</span></a>
+						</div> <!-- .product -->
+					</div> <!-- .description -->
+				</div> <!-- .container -->			
+			</div> <!-- .slide -->
+					<div class="slide" style="background-image: url(http://elegantthemes.com/preview/eStore/wp-content/uploads/2010/08/feature-11.jpg); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(173, 182, 179); display: none; background-position: 50% 0%; background-repeat: no-repeat no-repeat; ">
+				<div class="container">
+					<div class="description">
+						<div class="product">
+															<span class="tag" style="text-indent: 0px; "><span><cufon class="cufon cufon-canvas" alt="$125.99" style="width: 65px; height: 30px; "><canvas width="81" height="37" style="width: 81px; height: 37px; top: -6px; left: -1px; "></canvas><cufontext>$125.99</cufontext></cufon></span></span>
+														<h2 class="title" style="text-indent: 0px; "><a href="http://elegantthemes.com/preview/eStore/?p=6"><cufon class="cufon cufon-canvas" alt="Trendy " style="width: 110px; height: 36px; "><canvas width="140" height="38" style="width: 140px; height: 38px; top: -2px; left: -1px; "></canvas><cufontext>Trendy </cufontext></cufon><cufon class="cufon cufon-canvas" alt="New " style="width: 79px; height: 36px; "><canvas width="109" height="38" style="width: 109px; height: 38px; top: -2px; left: -1px; "></canvas><cufontext>New </cufontext></cufon><cufon class="cufon cufon-canvas" alt="Clothes" style="width: 114px; height: 36px; "><canvas width="137" height="38" style="width: 137px; height: 38px; top: -2px; left: -1px; "></canvas><cufontext>Clothes</cufontext></cufon></a></h2>
+							<p>Donec sit amet nulla ut dui consequat malesuada. Mauris elit orci, porttitor id dapibus suscipit, auctor vitae turpis. Praesent sit amet blandit ipsum. Vestibulum placerat sollicitudin purus quis egestas. Ut turpis mauris, congue a elementum vitae,...</p>
+							<a class="more" href="http://elegantthemes.com/preview/eStore/?p=6"><span>more info</span></a>
+						</div> <!-- .product -->
+					</div> <!-- .description -->
+				</div> <!-- .container -->			
+			</div> <!-- .slide -->
+			</div> <!-- #slides-->
+	
+	
+	<div id="controllers">
+		<div class="container">
+			<div id="switcher">
+				
+									<div class="item active" style="margin-top: 6px; ">
+						<a href="http://elegantthemes.com/preview/eStore/#" class="product">
+							<img src="./images/feature-3-2-109x109.jpg" alt="Richie Sambora Line" width="109" height="109">															<span class="tag" style="text-indent: 0px; "><span><cufon class="cufon cufon-canvas" alt="$195.99" style="width: 47px; height: 22px; "><canvas width="59" height="27" style="width: 59px; height: 27px; top: -4px; left: -1px; "></canvas><cufontext>$195.99</cufontext></cufon></span></span>
+													</a>
+					</div> <!-- .item -->
+									<div class="item" style="margin-top: -18px; ">
+						<a href="http://elegantthemes.com/preview/eStore/#" class="product">
+							<img src="./images/feature-2-2-109x109.jpg" alt="Designer Chairs" width="109" height="109">															<span class="tag" style="text-indent: 0px; "><span><cufon class="cufon cufon-canvas" alt="$45.95" style="width: 41px; height: 22px; "><canvas width="53" height="27" style="width: 53px; height: 27px; top: -4px; left: -1px; "></canvas><cufontext>$45.95</cufontext></cufon></span></span>
+													</a>
+					</div> <!-- .item -->
+									<div class="item last" style="margin-top: -18px; ">
+						<a href="http://elegantthemes.com/preview/eStore/#" class="product">
+							<img src="./images/feature-1-2-109x109.jpg" alt="Trendy New Clothes" width="109" height="109">															<span class="tag" style="text-indent: 0px; "><span><cufon class="cufon cufon-canvas" alt="$125.99" style="width: 47px; height: 22px; "><canvas width="59" height="27" style="width: 59px; height: 27px; top: -4px; left: -1px; "></canvas><cufontext>$125.99</cufontext></cufon></span></span>
+													</a>
+					</div> <!-- .item -->
+					
+			</div> <!-- #switcher -->
+		</div> <!-- .container -->
+	</div> <!-- #controllers -->
 
+	<div id="top-shadow"></div>
+	<div id="bottom-shadow"></div>
+	
+</div> <!-- end #featured -->	
+	<div id="content">
+		<div class="container clearfix">	
+<h3 id="deals-title" style="text-indent: 0px; "><span><cufon class="cufon cufon-canvas" alt="Deals " style="width: 40px; height: 24px; "><canvas width="57" height="29" style="width: 57px; height: 29px; top: -5px; left: -1px; "></canvas><cufontext>Deals </cufontext></cufon><cufon class="cufon cufon-canvas" alt="Of " style="width: 17px; height: 24px; "><canvas width="35" height="29" style="width: 35px; height: 29px; top: -5px; left: -1px; "></canvas><cufontext>Of </cufontext></cufon><cufon class="cufon cufon-canvas" alt="The " style="width: 25px; height: 24px; "><canvas width="42" height="29" style="width: 42px; height: 29px; top: -5px; left: -1px; "></canvas><cufontext>The </cufontext></cufon><cufon class="cufon cufon-canvas" alt="Day" style="width: 24px; height: 24px; "><canvas width="37" height="29" style="width: 37px; height: 29px; top: -5px; left: -1px; "></canvas><cufontext>Day</cufontext></cufon></span></h3>
 
-      #header, #about, #getting-started {
-        padding-left: 75px;
-        padding-right: 30px;
-      }
+<div id="scroller" class="clearfix">
+	<a href="http://elegantthemes.com/preview/eStore/#" id="left-arrow">Previous</a>
 
+	<div id="items" style="position: relative; width: 900px; height: 205px; overflow-x: hidden; overflow-y: hidden; ">
+		
+					<div class="block" style="position: absolute; top: 0px; opacity: 1; display: block; left: 0px; z-index: 3; ">			
+				<div class="item">
+					<div class="item-top"></div>
+					
+					<div class="item-content">
+												
+													<span class="tag" style="text-indent: 0px; "><span><cufon class="cufon cufon-canvas" alt="$12.99" style="width: 39px; height: 22px; "><canvas width="51" height="27" style="width: 51px; height: 27px; top: -4px; left: -1px; "></canvas><cufontext>$12.99</cufontext></cufon></span></span>
+												
+													<img src="./images/hat-2-162x112.jpg" alt="Smooth Crocodile Skin" width="162" height="112">												<h4 style="text-indent: 0px; "><a href="http://elegantthemes.com/preview/eStore/?p=219"><cufon class="cufon cufon-canvas" alt="Smooth " style="width: 57px; height: 16px; "><canvas width="71" height="17" style="width: 71px; height: 17px; top: -1px; left: -1px; "></canvas><cufontext>Smooth </cufontext></cufon><cufon class="cufon cufon-canvas" alt="Crocodile " style="width: 66px; height: 16px; "><canvas width="80" height="17" style="width: 80px; height: 17px; top: -1px; left: -1px; "></canvas><cufontext>Crocodile </cufontext></cufon><cufon class="cufon cufon-canvas" alt="Skin" style="width: 26px; height: 16px; "><canvas width="36" height="17" style="width: 36px; height: 17px; top: -1px; left: -1px; "></canvas><cufontext>Skin</cufontext></cufon></a></h4>
+					</div> <!-- .item-content -->
+					
+					<a href="http://elegantthemes.com/preview/eStore/?p=219" class="more"><span>more info</span></a>
+				</div> <!-- .item -->
+						
+						
+						
+								
+				<div class="item">
+					<div class="item-top"></div>
+					
+					<div class="item-content">
+												
+													<span class="tag" style="text-indent: 0px; "><span><cufon class="cufon cufon-canvas" alt="$35.99" style="width: 41px; height: 22px; "><canvas width="53" height="27" style="width: 53px; height: 27px; top: -4px; left: -1px; "></canvas><cufontext>$35.99</cufontext></cufon></span></span>
+												
+													<img src="./images/back-3-162x112.jpg" alt="Back to School" width="162" height="112">												<h4 style="text-indent: 0px; "><a href="http://elegantthemes.com/preview/eStore/?p=208"><cufon class="cufon cufon-canvas" alt="Back " style="width: 37px; height: 16px; "><canvas width="51" height="17" style="width: 51px; height: 17px; top: -1px; left: -1px; "></canvas><cufontext>Back </cufontext></cufon><cufon class="cufon cufon-canvas" alt="to " style="width: 17px; height: 16px; "><canvas width="31" height="17" style="width: 31px; height: 17px; top: -1px; left: -1px; "></canvas><cufontext>to </cufontext></cufon><cufon class="cufon cufon-canvas" alt="School" style="width: 46px; height: 16px; "><canvas width="61" height="17" style="width: 61px; height: 17px; top: -1px; left: -1px; "></canvas><cufontext>School</cufontext></cufon></a></h4>
+					</div> <!-- .item-content -->
+					
+					<a href="http://elegantthemes.com/preview/eStore/?p=208" class="more"><span>more info</span></a>
+				</div> <!-- .item -->
+						
+						
+						
+								
+				<div class="item">
+					<div class="item-top"></div>
+					
+					<div class="item-content">
+												
+													<span class="tag" style="text-indent: 0px; "><span><cufon class="cufon cufon-canvas" alt="$39.95" style="width: 41px; height: 22px; "><canvas width="53" height="27" style="width: 53px; height: 27px; top: -4px; left: -1px; "></canvas><cufontext>$39.95</cufontext></cufon></span></span>
+												
+													<img src="./images/shoes2-1-162x112.jpg" alt="Business Shoes" width="162" height="112">												<h4 style="text-indent: 0px; "><a href="http://elegantthemes.com/preview/eStore/?p=94"><cufon class="cufon cufon-canvas" alt="Business " style="width: 62px; height: 16px; "><canvas width="75" height="17" style="width: 75px; height: 17px; top: -1px; left: -1px; "></canvas><cufontext>Business </cufontext></cufon><cufon class="cufon cufon-canvas" alt="Shoes" style="width: 42px; height: 16px; "><canvas width="53" height="17" style="width: 53px; height: 17px; top: -1px; left: -1px; "></canvas><cufontext>Shoes</cufontext></cufon></a></h4>
+					</div> <!-- .item-content -->
+					
+					<a href="http://elegantthemes.com/preview/eStore/?p=94" class="more"><span>more info</span></a>
+				</div> <!-- .item -->
+						
+						
+						
+								
+				<div class="item last">
+					<div class="item-top"></div>
+					
+					<div class="item-content">
+												
+													<span class="tag" style="text-indent: 0px; "><span><cufon class="cufon cufon-canvas" alt="$19.95" style="width: 39px; height: 22px; "><canvas width="51" height="27" style="width: 51px; height: 27px; top: -4px; left: -1px; "></canvas><cufontext>$19.95</cufontext></cufon></span></span>
+												
+													<img src="./images/pillow2-1-162x112.jpg" alt="Bright Pillows" width="162" height="112">												<h4 style="text-indent: 0px; "><a href="http://elegantthemes.com/preview/eStore/?p=79"><cufon class="cufon cufon-canvas" alt="Bright " style="width: 40px; height: 16px; "><canvas width="54" height="17" style="width: 54px; height: 17px; top: -1px; left: -1px; "></canvas><cufontext>Bright </cufontext></cufon><cufon class="cufon cufon-canvas" alt="Pillows" style="width: 44px; height: 16px; "><canvas width="55" height="17" style="width: 55px; height: 17px; top: -1px; left: -1px; "></canvas><cufontext>Pillows</cufontext></cufon></a></h4>
+					</div> <!-- .item-content -->
+					
+					<a href="http://elegantthemes.com/preview/eStore/?p=79" class="more"><span>more info</span></a>
+				</div> <!-- .item -->
+						
+			</div> <!-- end .block -->			
+						
+					<div class="block" style="left: 0px; z-index: 1; position: absolute; top: 0px; display: none; ">			
+				<div class="item">
+					<div class="item-top"></div>
+					
+					<div class="item-content">
+												
+													<span class="tag" style="text-indent: 0px; "><span><cufon class="cufon cufon-canvas" alt="$29.99" style="width: 42px; height: 22px; "><canvas width="54" height="27" style="width: 54px; height: 27px; top: -4px; left: -1px; "></canvas><cufontext>$29.99</cufontext></cufon></span></span>
+												
+													<img src="./images/shoes-11-162x112.jpg" alt="Strappy Sandals" width="162" height="112">												<h4 style="text-indent: 0px; "><a href="http://elegantthemes.com/preview/eStore/?p=72"><cufon class="cufon cufon-canvas" alt="Strappy " style="width: 54px; height: 16px; "><canvas width="67" height="17" style="width: 67px; height: 17px; top: -1px; left: -1px; "></canvas><cufontext>Strappy </cufontext></cufon><cufon class="cufon cufon-canvas" alt="Sandals" style="width: 53px; height: 16px; "><canvas width="64" height="17" style="width: 64px; height: 17px; top: -1px; left: -1px; "></canvas><cufontext>Sandals</cufontext></cufon></a></h4>
+					</div> <!-- .item-content -->
+					
+					<a href="http://elegantthemes.com/preview/eStore/?p=72" class="more"><span>more info</span></a>
+				</div> <!-- .item -->
+						
+						
+						
+								
+				<div class="item">
+					<div class="item-top"></div>
+					
+					<div class="item-content">
+												
+													<span class="tag" style="text-indent: 0px; "><span><cufon class="cufon cufon-canvas" alt="$135.99" style="width: 46px; height: 22px; "><canvas width="58" height="27" style="width: 58px; height: 27px; top: -4px; left: -1px; "></canvas><cufontext>$135.99</cufontext></cufon></span></span>
+												
+													<img src="./images/chair-1-162x112.jpg" alt="Business Chairs" width="162" height="112">												<h4 style="text-indent: 0px; "><a href="http://elegantthemes.com/preview/eStore/?p=65"><cufon class="cufon cufon-canvas" alt="Business " style="width: 62px; height: 16px; "><canvas width="75" height="17" style="width: 75px; height: 17px; top: -1px; left: -1px; "></canvas><cufontext>Business </cufontext></cufon><cufon class="cufon cufon-canvas" alt="Chairs" style="width: 39px; height: 16px; "><canvas width="50" height="17" style="width: 50px; height: 17px; top: -1px; left: -1px; "></canvas><cufontext>Chairs</cufontext></cufon></a></h4>
+					</div> <!-- .item-content -->
+					
+					<a href="http://elegantthemes.com/preview/eStore/?p=65" class="more"><span>more info</span></a>
+				</div> <!-- .item -->
+						
+						
+						
+								
+				<div class="item">
+					<div class="item-top"></div>
+					
+					<div class="item-content">
+												
+													<span class="tag" style="text-indent: 0px; "><span><cufon class="cufon cufon-canvas" alt="$158.99" style="width: 46px; height: 22px; "><canvas width="59" height="27" style="width: 59px; height: 27px; top: -4px; left: -1px; "></canvas><cufontext>$158.99</cufontext></cufon></span></span>
+												
+													<img src="./images/bag-1-162x112.jpg" alt="Handmade Bags" width="162" height="112">												<h4 style="text-indent: 0px; "><a href="http://elegantthemes.com/preview/eStore/?p=58"><cufon class="cufon cufon-canvas" alt="Handmade " style="width: 79px; height: 16px; "><canvas width="92" height="17" style="width: 92px; height: 17px; top: -1px; left: -1px; "></canvas><cufontext>Handmade </cufontext></cufon><cufon class="cufon cufon-canvas" alt="Bags" style="width: 34px; height: 16px; "><canvas width="45" height="17" style="width: 45px; height: 17px; top: -1px; left: -1px; "></canvas><cufontext>Bags</cufontext></cufon></a></h4>
+					</div> <!-- .item-content -->
+					
+					<a href="http://elegantthemes.com/preview/eStore/?p=58" class="more"><span>more info</span></a>
+				</div> <!-- .item -->
+						
+						
+						
+								
+				<div class="item last">
+					<div class="item-top"></div>
+					
+					<div class="item-content">
+												
+													<span class="tag" style="text-indent: 0px; "><span><cufon class="cufon cufon-canvas" alt="$89.95" style="width: 41px; height: 22px; "><canvas width="53" height="27" style="width: 53px; height: 27px; top: -4px; left: -1px; "></canvas><cufontext>$89.95</cufontext></cufon></span></span>
+												
+													<img src="./images/chair4-1-162x112.jpg" alt="Geometric Design" width="162" height="112">												<h4 style="text-indent: 0px; "><a href="http://elegantthemes.com/preview/eStore/?p=123"><cufon class="cufon cufon-canvas" alt="Geometric " style="width: 73px; height: 16px; "><canvas width="87" height="17" style="width: 87px; height: 17px; top: -1px; left: -1px; "></canvas><cufontext>Geometric </cufontext></cufon><cufon class="cufon cufon-canvas" alt="Design" style="width: 44px; height: 16px; "><canvas width="54" height="17" style="width: 54px; height: 17px; top: -1px; left: -1px; "></canvas><cufontext>Design</cufontext></cufon></a></h4>
+					</div> <!-- .item-content -->
+					
+					<a href="http://elegantthemes.com/preview/eStore/?p=123" class="more"><span>more info</span></a>
+				</div> <!-- .item -->
+						
+			</div> <!-- end .block -->			
+						
+						
+					
+	</div> <!-- #items -->
+	
+	<a href="http://elegantthemes.com/preview/eStore/#" id="right-arrow">Next</a>
+</div> <!-- #scroller -->
 
-      #header {
-        background-image: url("images/rails.png");
-        background-repeat: no-repeat;
-        background-position: top left;
-        height: 64px;
-      }
-      #header h1, #header h2 {margin: 0}
-      #header h2 {
-        color: #888;
-        font-weight: normal;
-        font-size: 16px;
-      }
+<div class="clear"></div>
+	
+<div id="main-area">
+	<div id="main-content" class="clearfix">
+		<div id="left-column">
+										
+<div class="product">
+	<div class="product-content clearfix">
+		<a href="http://elegantthemes.com/preview/eStore/?p=140" class="image">
+			<span class="rounded" style="background: url(&#39;http://elegantthemes.com/preview/eStore/wp-content/uploads/2010/08/wallet-1-193x130.jpg&#39;) no-repeat;"></span>
+							<span class="tag" style="text-indent: 0px; "><span><cufon class="cufon cufon-canvas" alt="$39.95" style="width: 41px; height: 22px; "><canvas width="53" height="27" style="width: 53px; height: 27px; top: -4px; left: -1px; "></canvas><cufontext>$39.95</cufontext></cufon></span></span>
+					</a>
+		
+		<h3 style="text-indent: 0px; "><a href="http://elegantthemes.com/preview/eStore/?p=140"><cufon class="cufon cufon-canvas" alt="Vintage " style="width: 82px; height: 24px; "><canvas width="102" height="25" style="width: 102px; height: 25px; top: -2px; left: -1px; "></canvas><cufontext>Vintage </cufontext></cufon><cufon class="cufon cufon-canvas" alt="Wallet" style="width: 65px; height: 24px; "><canvas width="86" height="25" style="width: 86px; height: 25px; top: -2px; left: -1px; "></canvas><cufontext>Wallet</cufontext></cufon></a></h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis condimentum justo vitae est tincidunt placerat....</p>
+		
+		<a href="http://elegantthemes.com/preview/eStore/?p=140" class="more"><span>more info</span></a>
+		
+					<span class="band buygetone"></span>
+			</div> <!-- .product-content -->
+</div> <!-- .product -->
 
+											
+<div class="product">
+	<div class="product-content clearfix">
+		<a href="http://elegantthemes.com/preview/eStore/?p=51" class="image">
+			<span class="rounded" style="background: url(&#39;http://elegantthemes.com/preview/eStore/wp-content/uploads/2010/08/pillow-1-193x130.jpg&#39;) no-repeat;"></span>
+							<span class="tag" style="text-indent: 0px; "><span><cufon class="cufon cufon-canvas" alt="$35.95" style="width: 41px; height: 22px; "><canvas width="53" height="27" style="width: 53px; height: 27px; top: -4px; left: -1px; "></canvas><cufontext>$35.95</cufontext></cufon></span></span>
+					</a>
+		
+		<h3 style="text-indent: 0px; "><a href="http://elegantthemes.com/preview/eStore/?p=51"><cufon class="cufon cufon-canvas" alt="Designer " style="width: 94px; height: 24px; "><canvas width="114" height="25" style="width: 114px; height: 25px; top: -2px; left: -1px; "></canvas><cufontext>Designer </cufontext></cufon><cufon class="cufon cufon-canvas" alt="Pillows" style="width: 68px; height: 24px; "><canvas width="84" height="25" style="width: 84px; height: 25px; top: -2px; left: -1px; "></canvas><cufontext>Pillows</cufontext></cufon></a></h3>
+		<p>Maecenas eu turpis et ante lobortis semper. Quisque sodales dignissim dolor at condimentum. Quisque vel nunc arcu,...</p>
+		
+		<a href="http://elegantthemes.com/preview/eStore/?p=51" class="more"><span>more info</span></a>
+		
+					<span class="band outofstock"></span>
+			</div> <!-- .product-content -->
+</div> <!-- .product -->
 
-      #about h3 {
-        margin: 0;
-        margin-bottom: 10px;
-        font-size: 14px;
-      }
+											
+<div class="product last">
+	<div class="product-content clearfix">
+		<a href="http://elegantthemes.com/preview/eStore/?p=27" class="image">
+			<span class="rounded" style="background: url(&#39;http://elegantthemes.com/preview/eStore/wp-content/uploads/2010/08/shoes-1-193x130.jpg&#39;) no-repeat;"></span>
+							<span class="tag" style="text-indent: 0px; "><span><cufon class="cufon cufon-canvas" alt="$29.99" style="width: 42px; height: 22px; "><canvas width="54" height="27" style="width: 54px; height: 27px; top: -4px; left: -1px; "></canvas><cufontext>$29.99</cufontext></cufon></span></span>
+					</a>
+		
+		<h3 style="text-indent: 0px; "><a href="http://elegantthemes.com/preview/eStore/?p=27"><cufon class="cufon cufon-canvas" alt="Mens " style="width: 63px; height: 24px; "><canvas width="83" height="25" style="width: 83px; height: 25px; top: -2px; left: -1px; "></canvas><cufontext>Mens </cufontext></cufon><cufon class="cufon cufon-canvas" alt="Shoes" style="width: 64px; height: 24px; "><canvas width="80" height="25" style="width: 80px; height: 25px; top: -2px; left: -1px; "></canvas><cufontext>Shoes</cufontext></cufon></a></h3>
+		<p>Fusce interdum vestibulum urna quis imperdiet. Donec tristique erat nec magna euismod at ultricies lectus...</p>
+		
+		<a href="http://elegantthemes.com/preview/eStore/?p=27" class="more"><span>more info</span></a>
+		
+					<span class="band onsale"></span>
+			</div> <!-- .product-content -->
+</div> <!-- .product -->
 
-      #about-content {
-        background-color: #ffd;
-        border: 1px solid #fc0;
-        margin-left: -55px;
-        margin-right: -10px;
-      }
-      #about-content table {
-        margin-top: 10px;
-        margin-bottom: 10px;
-        font-size: 11px;
-        border-collapse: collapse;
-      }
-      #about-content td {
-        padding: 10px;
-        padding-top: 3px;
-        padding-bottom: 3px;
-      }
-      #about-content td.name  {color: #555}
-      #about-content td.value {color: #000}
+<div class="clear"></div>											
+<div class="product">
+	<div class="product-content clearfix">
+		<a href="http://elegantthemes.com/preview/eStore/?p=336" class="image">
+			<span class="rounded" style="background: url(&#39;http://elegantthemes.com/preview/eStore/wp-content/uploads/2010/08/toil-1-193x130.jpg&#39;) no-repeat;"></span>
+							<span class="tag" style="text-indent: 0px; "><span><cufon class="cufon cufon-canvas" alt="$49.95" style="width: 41px; height: 22px; "><canvas width="53" height="27" style="width: 53px; height: 27px; top: -4px; left: -1px; "></canvas><cufontext>$49.95</cufontext></cufon></span></span>
+					</a>
+		
+		<h3 style="text-indent: 0px; "><a href="http://elegantthemes.com/preview/eStore/?p=336"><cufon class="cufon cufon-canvas" alt="Toiletry " style="width: 77px; height: 24px; "><canvas width="97" height="25" style="width: 97px; height: 25px; top: -2px; left: -1px; "></canvas><cufontext>Toiletry </cufontext></cufon><cufon class="cufon cufon-canvas" alt="Collection" style="width: 99px; height: 24px; "><canvas width="113" height="25" style="width: 113px; height: 25px; top: -2px; left: -1px; "></canvas><cufontext>Collection</cufontext></cufon></a></h3>
+		<p>Vestibulum facilisis vestibulum egestas. Mauris faucibus iaculis pretium. Nam ullamcorper mauris eu augue...</p>
+		
+		<a href="http://elegantthemes.com/preview/eStore/?p=336" class="more"><span>more info</span></a>
+		
+			</div> <!-- .product-content -->
+</div> <!-- .product -->
 
-      #about-content ul {
-        padding: 0;
-        list-style-type: none;
-      }
+											
+<div class="product">
+	<div class="product-content clearfix">
+		<a href="http://elegantthemes.com/preview/eStore/?p=330" class="image">
+			<span class="rounded" style="background: url(&#39;http://elegantthemes.com/preview/eStore/wp-content/uploads/2010/08/silver-1-193x130.jpg&#39;) no-repeat;"></span>
+							<span class="tag" style="text-indent: 0px; "><span><cufon class="cufon cufon-canvas" alt="$35.99" style="width: 41px; height: 22px; "><canvas width="53" height="27" style="width: 53px; height: 27px; top: -4px; left: -1px; "></canvas><cufontext>$35.99</cufontext></cufon></span></span>
+					</a>
+		
+		<h3 style="text-indent: 0px; "><a href="http://elegantthemes.com/preview/eStore/?p=330"><cufon class="cufon cufon-canvas" alt="Silverware" style="width: 102px; height: 24px; "><canvas width="116" height="25" style="width: 116px; height: 25px; top: -2px; left: -1px; "></canvas><cufontext>Silverware</cufontext></cufon></a></h3>
+		<p>Sed neque justo, convallis a tempus varius, vestibulum et mi. Mauris vel sollicitudin nisl. In quis varius quam....</p>
+		
+		<a href="http://elegantthemes.com/preview/eStore/?p=330" class="more"><span>more info</span></a>
+		
+			</div> <!-- .product-content -->
+</div> <!-- .product -->
 
-      #about-content.failure {
-        background-color: #fcc;
-        border: 1px solid #f00;
-      }
-      #about-content.failure p {
-        margin: 0;
-        padding: 10px;
-      }
+											
+<div class="product last">
+	<div class="product-content clearfix">
+		<a href="http://elegantthemes.com/preview/eStore/?p=323" class="image">
+			<span class="rounded" style="background: url(&#39;http://elegantthemes.com/preview/eStore/wp-content/uploads/2010/08/cup2-1-193x130.jpg&#39;) no-repeat;"></span>
+							<span class="tag" style="text-indent: 0px; "><span><cufon class="cufon cufon-canvas" alt="$14.99" style="width: 39px; height: 22px; "><canvas width="51" height="27" style="width: 51px; height: 27px; top: -4px; left: -1px; "></canvas><cufontext>$14.99</cufontext></cufon></span></span>
+					</a>
+		
+		<h3 style="text-indent: 0px; "><a href="http://elegantthemes.com/preview/eStore/?p=323"><cufon class="cufon cufon-canvas" alt="Tall " style="width: 42px; height: 24px; "><canvas width="62" height="25" style="width: 62px; height: 25px; top: -2px; left: -1px; "></canvas><cufontext>Tall </cufontext></cufon><cufon class="cufon cufon-canvas" alt="Mugs" style="width: 57px; height: 24px; "><canvas width="73" height="25" style="width: 73px; height: 25px; top: -2px; left: -1px; "></canvas><cufontext>Mugs</cufontext></cufon></a></h3>
+		<p>Aliquam eros leo, ullamcorper sed faucibus in, mollis sit amet turpis. In risus nunc, luctus sit amet vulputate...</p>
+		
+		<a href="http://elegantthemes.com/preview/eStore/?p=323" class="more"><span>more info</span></a>
+		
+			</div> <!-- .product-content -->
+</div> <!-- .product -->
 
+<div class="clear"></div>											
+<div class="product">
+	<div class="product-content clearfix">
+		<a href="http://elegantthemes.com/preview/eStore/?p=316" class="image">
+			<span class="rounded" style="background: url(&#39;http://elegantthemes.com/preview/eStore/wp-content/uploads/2010/08/cup-1-193x130.jpg&#39;) no-repeat;"></span>
+							<span class="tag" style="text-indent: 0px; "><span><cufon class="cufon cufon-canvas" alt="$29.99" style="width: 42px; height: 22px; "><canvas width="54" height="27" style="width: 54px; height: 27px; top: -4px; left: -1px; "></canvas><cufontext>$29.99</cufontext></cufon></span></span>
+					</a>
+		
+		<h3 style="text-indent: 0px; "><a href="http://elegantthemes.com/preview/eStore/?p=316"><cufon class="cufon cufon-canvas" alt="Seasonal " style="width: 99px; height: 24px; "><canvas width="119" height="25" style="width: 119px; height: 25px; top: -2px; left: -1px; "></canvas><cufontext>Seasonal </cufontext></cufon><cufon class="cufon cufon-canvas" alt="Cups" style="width: 53px; height: 24px; "><canvas width="69" height="25" style="width: 69px; height: 25px; top: -2px; left: -1px; "></canvas><cufontext>Cups</cufontext></cufon></a></h3>
+		<p>Nulla laoreet mi nec lectus adipiscing cursus. Sed pretium tempor lorem, ac posuere ligula posuere vel. Vivamus...</p>
+		
+		<a href="http://elegantthemes.com/preview/eStore/?p=316" class="more"><span>more info</span></a>
+		
+					<span class="band onsale"></span>
+			</div> <!-- .product-content -->
+</div> <!-- .product -->
 
-      #getting-started {
-        border-top: 1px solid #ccc;
-        margin-top: 25px;
-        padding-top: 15px;
-      }
-      #getting-started h1 {
-        margin: 0;
-        font-size: 20px;
-      }
-      #getting-started h2 {
-        margin: 0;
-        font-size: 14px;
-        font-weight: normal;
-        color: #333;
-        margin-bottom: 25px;
-      }
-      #getting-started ol {
-        margin-left: 0;
-        padding-left: 0;
-      }
-      #getting-started li {
-        font-size: 18px;
-        color: #888;
-        margin-bottom: 25px;
-      }
-      #getting-started li h2 {
-        margin: 0;
-        font-weight: normal;
-        font-size: 18px;
-        color: #333;
-      }
-      #getting-started li p {
-        color: #555;
-        font-size: 13px;
-      }
+											
+<div class="product">
+	<div class="product-content clearfix">
+		<a href="http://elegantthemes.com/preview/eStore/?p=293" class="image">
+			<span class="rounded" style="background: url(&#39;http://elegantthemes.com/preview/eStore/wp-content/uploads/2010/08/chis-1-193x130.jpg&#39;) no-repeat;"></span>
+							<span class="tag" style="text-indent: 0px; "><span><cufon class="cufon cufon-canvas" alt="$35.99" style="width: 41px; height: 22px; "><canvas width="53" height="27" style="width: 53px; height: 27px; top: -4px; left: -1px; "></canvas><cufontext>$35.99</cufontext></cufon></span></span>
+					</a>
+		
+		<h3 style="text-indent: 0px; "><a href="http://elegantthemes.com/preview/eStore/?p=293"><cufon class="cufon cufon-canvas" alt="Christmas " style="width: 106px; height: 24px; "><canvas width="126" height="25" style="width: 126px; height: 25px; top: -2px; left: -1px; "></canvas><cufontext>Christmas </cufontext></cufon><cufon class="cufon cufon-canvas" alt="Clothes" style="width: 77px; height: 24px; "><canvas width="93" height="25" style="width: 93px; height: 25px; top: -2px; left: -1px; "></canvas><cufontext>Clothes</cufontext></cufon></a></h3>
+		<p>Nulla faucibus laoreet rhoncus. Suspendisse potenti. Morbi sit amet commodo odio. Curabitur faucibus eleifend...</p>
+		
+		<a href="http://elegantthemes.com/preview/eStore/?p=293" class="more"><span>more info</span></a>
+		
+			</div> <!-- .product-content -->
+</div> <!-- .product -->
 
+											
+<div class="product last">
+	<div class="product-content clearfix">
+		<a href="http://elegantthemes.com/preview/eStore/?p=290" class="image">
+			<span class="rounded" style="background: url(&#39;http://elegantthemes.com/preview/eStore/wp-content/uploads/2010/08/sweat-4-193x130.jpg&#39;) no-repeat;"></span>
+							<span class="tag" style="text-indent: 0px; "><span><cufon class="cufon cufon-canvas" alt="$19.95" style="width: 39px; height: 22px; "><canvas width="51" height="27" style="width: 51px; height: 27px; top: -4px; left: -1px; "></canvas><cufontext>$19.95</cufontext></cufon></span></span>
+					</a>
+		
+		<h3 style="text-indent: 0px; "><a href="http://elegantthemes.com/preview/eStore/?p=290"><cufon class="cufon cufon-canvas" alt="Wool " style="width: 62px; height: 24px; "><canvas width="82" height="25" style="width: 82px; height: 25px; top: -2px; left: -1px; "></canvas><cufontext>Wool </cufontext></cufon><cufon class="cufon cufon-canvas" alt="Sweater" style="width: 83px; height: 24px; "><canvas width="103" height="25" style="width: 103px; height: 25px; top: -2px; left: -1px; "></canvas><cufontext>Sweater</cufontext></cufon></a></h3>
+		<p>Donec feugiat volutpat sapien, id iaculis lorem posuere imperdiet. Sed vel elit tortor, id rhoncus turpis. Nullam...</p>
+		
+		<a href="http://elegantthemes.com/preview/eStore/?p=290" class="more"><span>more info</span></a>
+		
+			</div> <!-- .product-content -->
+</div> <!-- .product -->
 
-      #sidebar ul {
-        margin-left: 0;
-        padding-left: 0;
-      }
-      #sidebar ul h3 {
-        margin-top: 25px;
-        font-size: 16px;
-        padding-bottom: 10px;
-        border-bottom: 1px solid #ccc;
-      }
-      #sidebar li {
-        list-style-type: none;
-      }
-      #sidebar ul.links li {
-        margin-bottom: 5px;
-      }
+<div class="clear"></div>															<div class="wp-pagenavi">
+<span class="pages">Page 1 of 5</span><span class="current" style="text-indent: 0px; "><cufon class="cufon cufon-canvas" alt="1" style="width: 5px; height: 20px; "><canvas width="17" height="24" style="width: 17px; height: 24px; top: -4px; left: -1px; "></canvas><cufontext>1</cufontext></cufon></span><a href="http://elegantthemes.com/preview/eStore/?paged=2" class="page larger" style="text-indent: 0px; "><cufon class="cufon cufon-canvas" alt="2" style="width: 8px; height: 20px; "><canvas width="18" height="24" style="width: 18px; height: 24px; top: -4px; left: -1px; "></canvas><cufontext>2</cufontext></cufon></a><a href="http://elegantthemes.com/preview/eStore/?paged=3" class="page larger" style="text-indent: 0px; "><cufon class="cufon cufon-canvas" alt="3" style="width: 7px; height: 20px; "><canvas width="17" height="24" style="width: 17px; height: 24px; top: -4px; left: -1px; "></canvas><cufontext>3</cufontext></cufon></a><a href="http://elegantthemes.com/preview/eStore/?paged=4" class="page larger" style="text-indent: 0px; "><cufon class="cufon cufon-canvas" alt="4" style="width: 7px; height: 20px; "><canvas width="17" height="24" style="width: 17px; height: 24px; top: -4px; left: -1px; "></canvas><cufontext>4</cufontext></cufon></a><a href="http://elegantthemes.com/preview/eStore/?paged=5" class="page larger" style="text-indent: 0px; "><cufon class="cufon cufon-canvas" alt="5" style="width: 7px; height: 20px; "><canvas width="18" height="24" style="width: 18px; height: 24px; top: -4px; left: -1px; "></canvas><cufontext>5</cufontext></cufon></a><a href="http://elegantthemes.com/preview/eStore/?paged=2" class="nextpostslink">»</a>
+</div>	
+						
+		</div> <!-- #left-column -->
 
-    </style>
-    <script type="text/javascript">
-      function about() {
-        info = document.getElementById('about-content');
-        if (window.XMLHttpRequest)
-          { xhr = new XMLHttpRequest(); }
-        else
-          { xhr = new ActiveXObject("Microsoft.XMLHTTP"); }
-        xhr.open("GET","rails/info/properties",false);
-        xhr.send("");
-        info.innerHTML = xhr.responseText;
-        info.style.display = 'block'
-      }
-    </script>
-  </head>
-  <body>
-    <div id="page">
-      <div id="sidebar">
-        <ul id="sidebar-items">
-          <li>
-            <h3>Browse the documentation</h3>
-            <ul class="links">
-              <li><a href="http://api.rubyonrails.org/">Rails API</a></li>
-              <li><a href="http://stdlib.rubyonrails.org/">Ruby standard library</a></li>
-              <li><a href="http://corelib.rubyonrails.org/">Ruby core</a></li>
-              <li><a href="http://guides.rubyonrails.org/">Rails Guides</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
+		<div id="sidebar">
+	<div id="eshopw_cart-4" class="widget eshop-widget eshopcart_widget"><h4 class="widgettitle" style="text-indent: 0px; "><cufon class="cufon cufon-canvas" alt="Shopping " style="width: 81px; height: 30px; "><canvas width="103" height="37" style="width: 103px; height: 37px; top: -6px; left: -1px; "></canvas><cufontext>Shopping </cufontext></cufon><cufon class="cufon cufon-canvas" alt="Cart" style="width: 35px; height: 30px; "><canvas width="54" height="37" style="width: 54px; height: 37px; top: -6px; left: -1px; "></canvas><cufontext>Cart</cufontext></cufon></h4><div class="widget-content"><div class="ajaxcart">Your cart is empty.</div><p><a class="cartlink" href="http://elegantthemes.com/preview/eStore/?page_id=415">View Cart</a><br><a class="checkoutlink" href="http://elegantthemes.com/preview/eStore/?page_id=416">Checkout</a></p></div> <!-- .widget-content --></div> <!-- end .widget -->		<div id="recent-posts-3" class="widget widget_recent_entries">		<h4 class="widgettitle" style="text-indent: 0px; "><cufon class="cufon cufon-canvas" alt="Recent " style="width: 59px; height: 30px; "><canvas width="81" height="37" style="width: 81px; height: 37px; top: -6px; left: -1px; "></canvas><cufontext>Recent </cufontext></cufon><cufon class="cufon cufon-canvas" alt="Products" style="width: 74px; height: 30px; "><canvas width="91" height="37" style="width: 91px; height: 37px; top: -6px; left: -1px; "></canvas><cufontext>Products</cufontext></cufon></h4><div class="widget-content">		<ul>
+				<li><a href="http://elegantthemes.com/preview/eStore/?p=140" title="Vintage Wallet">Vintage Wallet</a></li>
+				<li><a href="http://elegantthemes.com/preview/eStore/?p=51" title="Designer Pillows">Designer Pillows</a></li>
+				<li><a href="http://elegantthemes.com/preview/eStore/?p=27" title="Mens Shoes">Mens Shoes</a></li>
+				<li><a href="http://elegantthemes.com/preview/eStore/?p=336" title="Toiletry Collection">Toiletry Collection</a></li>
+				<li><a href="http://elegantthemes.com/preview/eStore/?p=330" title="Silverware">Silverware</a></li>
+				</ul>
+		</div> <!-- .widget-content --></div> <!-- end .widget --><div id="meta-3" class="widget widget_meta"><h4 class="widgettitle" style="text-indent: 0px; "><cufon class="cufon cufon-canvas" alt="Company " style="width: 79px; height: 30px; "><canvas width="101" height="37" style="width: 101px; height: 37px; top: -6px; left: -1px; "></canvas><cufontext>Company </cufontext></cufon><cufon class="cufon cufon-canvas" alt="Info" style="width: 33px; height: 30px; "><canvas width="50" height="37" style="width: 50px; height: 37px; top: -6px; left: -1px; "></canvas><cufontext>Info</cufontext></cufon></h4><div class="widget-content">			<ul>
+						<li><a href="http://elegantthemes.com/preview/eStore/wp-login.php">Log in</a></li>
+			<li><a href="http://elegantthemes.com/preview/eStore/?feed=rss2" title="Syndicate this site using RSS 2.0">Entries <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="http://elegantthemes.com/preview/eStore/?feed=comments-rss2" title="The latest comments to all posts in RSS">Comments <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="http://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.org</a></li>
+						</ul>
+</div> <!-- .widget-content --></div> <!-- end .widget --><div id="linkcat-2" class="widget widget_links"><h4 class="widgettitle" style="text-indent: 0px; "><cufon class="cufon cufon-canvas" alt="Blogroll" style="width: 64px; height: 30px; "><canvas width="85" height="37" style="width: 85px; height: 37px; top: -6px; left: -1px; "></canvas><cufontext>Blogroll</cufontext></cufon></h4><div class="widget-content">
+	<ul class="xoxo blogroll">
+<li><a href="http://codex.wordpress.org/">Documentation</a></li>
+<li><a href="http://wordpress.org/extend/plugins/">Plugins</a></li>
+<li><a href="http://wordpress.org/extend/ideas/">Suggest Ideas</a></li>
+<li><a href="http://wordpress.org/support/">Support Forum</a></li>
+<li><a href="http://wordpress.org/extend/themes/">Themes</a></li>
+<li><a href="http://wordpress.org/development/">WordPress Blog</a></li>
+<li><a href="http://planet.wordpress.org/">WordPress Planet</a></li>
 
-      <div id="content">
-        <div id="header">
-          <h1>Welcome aboard</h1>
-          <h2>You&rsquo;re riding Ruby on Rails!</h2>
-        </div>
+	</ul>
+</div> <!-- .widget-content --></div> <!-- end .widget -->
+</div> <!-- end #sidebar -->			
+				</div> <!-- #main-content -->
+			</div> <!-- #main-area -->
+			<div id="main-area-bottom"></div>
+			
+			<div id="footer">
+				<p id="copyright">Designed by  <a href="http://www.elegantthemes.com/" title="Elegant Themes">Elegant Themes</a> | Powered by  <a href="http://www.wordpress.org/">Wordpress</a></p>
+			</div> <!-- #footer-->
+			
+		</div> <!-- .container -->
+	</div> <!-- #content -->
+	
+		<script src="./javascripts/cufon-yui.js" type="text/javascript"></script>
+	<script src="./javascripts/Raleway_250.font.js" type="text/javascript"></script>
+	<script src="./javascripts/League_Gothic_400.font.js" type="text/javascript"></script>
+	    <!--[if gte IE 9]>
+       <script type="text/javascript">
+          Cufon.set('engine', 'canvas');
+       </script>
+	<![endif]-->
+		<script type="text/javascript">		
+		//<![CDATA[
+			Cufon.replace('#featured span.tag',{textShadow:'1px 1px 0px rgba(0,0,0,0.4)'})('h3#deals-title')('#content span.tag',{textShadow:'1px 1px 0px #131212'})('h4.widgettitle',{textShadow:'1px 1px 0px #ffffff'})('ul#secondary-menu li a strong',{textShadow:'1px 1px 0px #1d1d1d'})('span.price-single',{textShadow: '1px 1px 1px rgba(0,0,0,0.4);'})('.addto-cart',{textShadow: '1px 1px 1px rgba(0,0,0,0.4);'})('.wp-pagenavi span.current')('.wp-pagenavi a.page');
+						Cufon.set('fontFamily', 'Raleway');
 
-        <div id="about">
-          <h3><a href="rails/info/properties" onclick="about(); return false">About your application&rsquo;s environment</a></h3>
-          <div id="about-content" style="display: none"></div>
-        </div>
+			Cufon.replace('.description h2.title')('.item-content h4')('.product h3')('.post h1')('.post h2')('.post h3')('.post h4')('.post h5')('.post h6')('.related-items span');
+		//]]>
+		</script>
+		
+	<script type="text/javascript" src="./javascripts/jquery.cycle.all.min.js"></script> 
+	<script type="text/javascript" src="./javascripts/jquery.easing.1.3.js"></script>	
+	<script type="text/javascript" src="./javascripts/superfish.js"></script>	
+	<script type="text/javascript">
+	//<![CDATA[
+		jQuery.noConflict();
+		
+		jQuery('ul#top-menu').superfish({
+			delay:       200,                            // one second delay on mouseout 
+			animation:   {'marginLeft':'0px',opacity:'show'},  // fade-in and slide-down animation 
+			speed:       'fast',                          // faster animation speed 
+			onBeforeShow: function(){ this.css('marginLeft','20px'); },
+			autoArrows:  true,                           // disable generation of arrow mark-up 
+			dropShadows: false                            // disable drop shadows 
+		}).find('li ul').prepend('<li class="top"><span class="menu-top"></span></li>').find('li:eq(1)').addClass('second');
+		
+		jQuery('ul#secondary-menu').superfish({ 
+			delay:       200,                            // one second delay on mouseout 
+			animation:   {opacity:'show',height:'show'},  // fade-in and slide-down animation 
+			speed:       'fast',                          // faster animation speed 
+			autoArrows:  true,                           // disable generation of arrow mark-up 
+			dropShadows: false                            // disable drop shadows 
+		});
+		
+		et_search_bar();
+		
+				
+		<!---- et_switcher plugin v1.4 ---->
+		(function($)
+		{
+			$.fn.et_switcher = function(options)
+			{
+				var defaults =
+				{
+				   slides: '>div',
+				   activeClass: 'active',
+				   linksNav: '',
+				   findParent: true, //use parent elements in defining lengths
+				   lengthElement: 'li', //parent element, used only if findParent is set to true
+				   useArrows: false,
+				   arrowLeft: 'prevlink',
+				   arrowRight: 'nextlink',
+				   auto: false,
+				   autoSpeed: 5000
+				};
 
-        <div id="getting-started">
-          <h1>Getting started</h1>
-          <h2>Here&rsquo;s how to get rolling:</h2>
+				var options = $.extend(defaults, options);
 
-          <ol>
-            <li>
-              <h2>Use <code>rails generate</code> to create your models and controllers</h2>
-              <p>To see all available options, run it without parameters.</p>
-            </li>
+				return this.each(function()
+				{
+					var slidesContainer = jQuery(this);
+					slidesContainer.find(options.slides).hide().end().find(options.slides).filter(':first').css('display','block');
+			 
+					if (options.linksNav != '') {
+						var linkSwitcher = jQuery(options.linksNav);
+										
+						linkSwitcher.click(function(){
+							var targetElement;
 
-            <li>
-              <h2>Set up a default route and remove or rename this file</h2>
-              <p>Routes are set up in config/routes.rb.</p>
-            </li>
+							if (options.findParent) targetElement = jQuery(this).parent();
+							else targetElement = jQuery(this);
+							
+							if (targetElement.hasClass('active')) return false;
 
-            <li>
-              <h2>Create your database</h2>
-              <p>Run <code>rake db:migrate</code> to create your database. If you're not using SQLite (the default), edit <code>config/database.yml</code> with your username and password.</p>
-            </li>
-          </ol>
-        </div>
-      </div>
+							/* 	targetElement.siblings().removeClass('active').end().addClass('active');
+								var ordernum = targetElement.prevAll(options.lengthElement).length;
+								slidesContainer.find(options.slides).filter(':visible').hide()
+									.end().end().find(options.slides).filter(':eq('+ordernum+')').stop().fadeIn(700);
+							*/
+							
+							targetElement.siblings('.active').animate({marginTop: '-18px'},500,function(){
+								jQuery(this).removeClass('active');
+								
+							});
+							targetElement.animate({marginTop: '6px'},500,function(){
+								jQuery(this).addClass('active');
+								
+							});
+							var ordernum = targetElement.prevAll(options.lengthElement).length;
+						
+							slidesContainer.find(options.slides).filter(':visible').hide().end().end().find(options.slides).filter(':eq('+ordernum+')').stop().fadeIn(700);
+							
+							if (typeof interval != 'undefined') {
+								clearInterval(interval);
+								auto_rotate();
+							};
+							
+							return false;
+						});
+					};
+					
+					jQuery('#'+options.arrowRight+', #'+options.arrowLeft).click(function(){
+					  
+						var slideActive = slidesContainer.find(options.slides).filter(":visible"),
+							nextSlide = slideActive.next(),
+							prevSlide = slideActive.prev();
 
-      <div id="footer">&nbsp;</div>
-    </div>
-  </body>
-</html>
+						if (jQuery(this).attr("id") == options.arrowRight) {
+							if (nextSlide.length) {
+								var ordernum = nextSlide.prevAll().length;                        
+							} else { var ordernum = 0; }
+						};
+
+						if (jQuery(this).attr("id") == options.arrowLeft) {
+							if (prevSlide.length) {
+								var ordernum = prevSlide.prevAll().length;                  
+							} else { var ordernum = slidesContainer.find(options.slides).length-1; }
+						};
+
+						slidesContainer.find(options.slides).filter(':visible').hide().end().end().find(options.slides).filter(':eq('+ordernum+')').stop().fadeIn(700);
+
+						if (typeof interval != 'undefined') {
+							clearInterval(interval);
+							auto_rotate();
+						};
+
+						return false;
+					});   
+
+					if (options.auto) {
+						auto_rotate();
+					};
+					
+					function auto_rotate(){
+						interval = setInterval(function(){
+							var slideActive = slidesContainer.find(options.slides).filter(":visible"),
+								nextSlide = slideActive.next();
+						 
+							if (nextSlide.length) {
+								var ordernum = nextSlide.prevAll().length;                        
+							} else { var ordernum = 0; }
+						 
+							if (options.linksNav === '') 
+								jQuery('#'+options.arrowRight).trigger("click");
+							else 		 		
+								linkSwitcher.filter(':eq('+ordernum+')').trigger("click");
+						},options.autoSpeed);
+					};
+				});
+			}
+		})(jQuery);
+				
+		var $featuredArea = jQuery('#featured #slides');
+		
+		if ($featuredArea.length) {
+			$featuredArea.et_switcher({
+				linksNav: '#switcher a',
+									auto: true,
+					autoSpeed: 6000,
+								findParent: true,
+				lengthElement: 'div'
+			});
+		};
+		
+		
+		var $slider_content = jQuery('#scroller #items');
+		if ($slider_content.length) {
+			$slider_content.cycle({
+				fx: 'scrollHorz',
+				timeout: 0,
+				speed: 700,
+				cleartypeNoBg: true,
+				next:   'a#right-arrow',
+				prev:   'a#left-arrow'
+			});
+		};
+		
+		var $featured = jQuery('#product-slider'),
+			$featured_content = jQuery('#product-slides'),
+			$controller = jQuery('#product-thumbs'),
+			$slider_control_tab = $controller.find('a');
+		if ($featured_content.length) {
+			$featured_content.cycle({
+				fx: 'fade',
+				timeout: 0,
+				speed: 700,
+				cleartypeNoBg: true
+			});
+			
+			var ordernum;				
+			
+			function gonext(this_element){
+				$controller.find("a.active").removeClass('active');
+				
+				this_element.addClass('active');
+				
+				ordernum = this_element.attr("rel");
+				$featured_content.cycle(ordernum-1);
+				
+				if (typeof interval != 'undefined') {
+					clearInterval(interval);
+					auto_rotate();
+				};
+			}
+			
+			$slider_control_tab.click(function(){
+				gonext(jQuery(this));
+				return false;
+			});
+		};
+		
+		
+		<!---- Search Bar Improvements ---->
+		function et_search_bar(){
+			var $searchform = jQuery('#header #searchform1'),
+				$searchinput = $searchform.find("input#searchinput"),
+				searchvalue = $searchinput.val();
+				
+			$searchinput.focus(function(){
+				if (jQuery(this).val() === searchvalue) jQuery(this).val("");
+			}).blur(function(){
+				if (jQuery(this).val() === "") jQuery(this).val(searchvalue);
+			});
+		};
+		
+					jQuery('.cufon-enabled #featured span.tag, .cufon-enabled h3#deals-title, .cufon-enabled #content span.tag, .cufon-enabled h4.widgettitle, .cufon-enabled ul#secondary-menu li a strong, .cufon-enabled span.price-single, .cufon-enabled .addto-cart, .cufon-enabled .wp-pagenavi span.current, .cufon-enabled .wp-pagenavi a.page, .cufon-enabled .description h2.title, .cufon-enabled .item-content h4, .cufon-enabled .product h3, .cufon-enabled .post h1, .cufon-enabled .post h2, .cufon-enabled .post h3, .cufon-enabled .post h4, .cufon-enabled post h5, .cufon-enabled .post h6, .cufon-enabled .related-items span').css('text-indent','0px');
+			
+			Cufon.now();
+				
+	//]]>	
+	</script>	<script type="text/javascript" src="./javascripts/jquery.easing-1.3.pack.js"></script>
+<script type="text/javascript" src="./javascripts/jquery.fancybox-1.3.4.pack.js"></script>
+<script type="text/javascript" src="./javascripts/et-ptemplates-frontend.js"></script>
+
+<script type="text/javascript">
+			var form_object = jQuery("div.dnone");
+			form_object.appendTo(".product-info .clearfix");
+			
+			jQuery("a.addto-cart").click(function(){
+				form_object.slideToggle();
+				return false;
+			});
+		</script>
+
+			<div id="fancybox-tmp"></div><div id="fancybox-loading"><div></div></div><div id="fancybox-overlay"></div><div id="fancybox-wrap"><div id="fancybox-outer"><div class="fancybox-bg" id="fancybox-bg-n"></div><div class="fancybox-bg" id="fancybox-bg-ne"></div><div class="fancybox-bg" id="fancybox-bg-e"></div><div class="fancybox-bg" id="fancybox-bg-se"></div><div class="fancybox-bg" id="fancybox-bg-s"></div><div class="fancybox-bg" id="fancybox-bg-sw"></div><div class="fancybox-bg" id="fancybox-bg-w"></div><div class="fancybox-bg" id="fancybox-bg-nw"></div><div id="fancybox-content"></div><a id="fancybox-close"></a><div id="fancybox-title"></div><a href="javascript:;" id="fancybox-left"><span class="fancy-ico" id="fancybox-left-ico"></span></a><a href="javascript:;" id="fancybox-right"><span class="fancy-ico" id="fancybox-right-ico"></span></a></div></div></body></html>
