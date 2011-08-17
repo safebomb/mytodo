@@ -1,6 +1,6 @@
 Sample::Application.routes.draw do
   resources :todos
-  match '/'=> redirect("/todos")
+  root :to => "todos#index"
 
 
   # The priority is based upon order of creation:
