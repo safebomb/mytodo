@@ -4,7 +4,7 @@ Sample::Application.routes.draw do
   resources :todos
   root :to => "home#index"
 
-  match "home/" => "home#load"
+  match "home/" => "home#index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
