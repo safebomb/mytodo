@@ -1,5 +1,7 @@
 Sample::Application.routes.draw do
   resources :todos
+  match '/'=> redirect("/todos")
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
