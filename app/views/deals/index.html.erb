@@ -22,7 +22,8 @@
     <td><%= link_to 'Show', deal %></td>
     <td><%= link_to 'Edit', edit_deal_path(deal) %></td>
     <td><%= link_to 'Destroy', deal, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
+   <td><%= link_to 'Create PDF document', deal_path(deal, :format => :pdf) %> </td>
+</tr>
 <% end %>
 </table>
 

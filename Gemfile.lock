@@ -67,6 +67,7 @@ GEM
       polyglot
       polyglot (>= 0.3.1)
     tzinfo (0.3.29)
+    wicked_pdf (0.7.2)
 
 PLATFORMS
   ruby
@@ -74,3 +75,4 @@ PLATFORMS
 DEPENDENCIES
   rails (= 3.0.9)
   sqlite3
+  wicked_pdf

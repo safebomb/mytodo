@@ -18,6 +18,17 @@ class DealsController < ApplicationController
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @deal }
+      format.pdf do
+          @example_text = @deal.name
+          render :pdf => @deal.name + ".pdf",
+                 :template => 'deals/show.html.erb',
+                 :layout => 'pdf',
+                 :footer => {
+                    :center => "Center",
+                    :left => "Left",
+                    :right => "Right"
+                 }
+      end
     end
   end
 
